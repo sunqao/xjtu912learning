@@ -280,5 +280,17 @@ $$
 $$
 \frac{500000}{500000000} * 100\% = 0.1\%
 $$
- 
 
+## 4.1 总线主模块和从模块
+
+![image-20240925161042495](https://typora-1310242472.cos.ap-nanjing.myqcloud.com/typora_img/image-20240925161042495.png)
+
+![image-20240925161230635](https://typora-1310242472.cos.ap-nanjing.myqcloud.com/typora_img/image-20240925161230635.png)
+
+## 4.2 总线传送信息的过程
+
+![image-20240925161310785](https://typora-1310242472.cos.ap-nanjing.myqcloud.com/typora_img/image-20240925161310785.png)
+
+![image-20240925161401170](https://typora-1310242472.cos.ap-nanjing.myqcloud.com/typora_img/image-20240925161401170.png)
+
+时序关系图不要求掌握
