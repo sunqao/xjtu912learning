@@ -1,5 +1,6 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "",
   "theme": "obsidian",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "monospaceFontFamily": "Consolas"
 }
