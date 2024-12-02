@@ -115,3 +115,180 @@ void shell_sort(){
 }
 ```
 
+```cpp
+int q[n];
+void insert_sort(){
+	for(int i = 1; i < n ; i ++){
+		int t = q[i];
+		int j = i;
+		while(j > 0 && q[j] > t){
+			q[j - 1] = q[j];
+			j --;
+		}
+		q[j] = t;
+	}
+}
+```
+
+```cpp
+bool check(){
+
+}
+
+void bsearch(int l, int r, int t){
+	while(l < r){
+		int mid = l + r >> 1;
+		if(check(mid)) r = mid;
+		else l = mid + 1;
+	}
+	
+	return l;
+}
+```
+
+```cpp
+bool check(){}
+
+void bsearch(int l, int r, int t){
+	while(l < r){
+		int mid = l + r + 1 >> 1;
+		if(check(mid)) l = mid;
+		else r = mid - 1;
+	}
+	
+	return l;
+}
+```
+
+```cpp
+int q[n];
+void binsert_sort(){
+	for(int i = 1; i < n; i ++){
+		if(q[i - 1] <= q[j]) continue;
+		int t = q[i];
+		//int j = i;
+		
+		int l = 0, r = i - 1;
+		while(l < r){
+			int mid = l + r >> 1;
+			if(q[mid] > t) r = mid;
+			else l = mid + 1;
+		}
+		
+		for(int j = i; j > l; j --){
+			q[j] = q[j - 1];
+		}
+		q[l] = t;
+	}
+}
+```
+
+```cpp
+void bubble_sort(){
+	for(int i = 0; i <= n - 1; i ++){
+		bool is_swap = false;
+		
+		for(int j = n - 1; j > i; j --){
+			if(q[j-1] > q[j]){
+				swap(q[j - 1], q[j]);
+				is_swap = true;
+			}
+		}
+		
+		if(!is_swap) break;
+	}
+}
+```
+
+```cpp
+void select_sort(){
+	for(int i = 0; i < n - 1; i ++){
+		int k = i;
+		
+		for(int j = i + 1; j <= n - 1; j ++){
+			if(q[j] < q[k]) k = j;
+		}
+		
+		swap(q[i], q[k]);
+	}
+}
+```
+
+
+```cpp
+void insert_sort(){
+	for(int i = 1; i < n; i ++){
+		int t = q[i];
+		int j = i;
+		while(j > 0 && q[j - 1] > q[j]){
+			q[j] = q[j - 1];
+			j --;
+		}
+		
+		q[j] = t;
+	}
+}
+
+void binsert_sort(){
+	for(int i = 1; i < n; i ++){
+		if(q[i - 1] <= q[i]) continue;
+		
+		int t = q[i];
+		
+		int l = 0, j = i - 1;
+		while(l < j){
+			int mid = l + r >> 1;
+			if(q[mid] > t) r = mid;
+			else l = mid + 1;
+		}
+		for(int j = i; j > l; j --){
+			q[j] = q[j - 1];
+		}
+		q[l] = t;
+	}
+}
+
+void bubble_sort(){
+	for(int i = 0; i < n - 1; i ++){
+		bool is_swap = false;
+		
+		for(int j = n - 1; j > i; j --){
+			if(q[j - 1] > q[j]){
+				swap(q[j - 1], q[j]);
+				is_swap = true;
+			}
+			
+		}
+		
+		if(!is_swap) break;
+	}
+}
+
+void select_sort(){
+	for(int i = 0; i < n - 1; i ++){
+		int k = i;
+		for(int j = i + 1; j < n; j ++){
+			if(q[j] < q[k]) k = j;
+		}
+		swap(q[i], q[j]);
+	}
+}
+```
+
+```cpp
+void shell_sort(){
+	for(int d = n / 2; d; d /= 2){
+		for(int start = 0; start < d; start ++){
+			for(int i = start + d; i < n; i += d){
+				int t = q[i];
+				int j = i;
+				while(j > start && q[j - d] > t){
+					q[j] = q[j - d];
+					j -= d;
+				}
+				q[j] = t;
+			}
+		}
+	}
+}
+```
