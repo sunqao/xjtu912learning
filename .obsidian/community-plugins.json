@@ -3,7 +3,9 @@
   "obsidian-git",
   "obsidian-image-auto-upload-plugin",
   "obsidian-quiet-outline",
-  "easy-typing-obsidian",
   "editing-toolbar",
-  "remember-cursor-position"
+  "remember-cursor-position",
+  "easy-typing-obsidian",
+  "omnisearch",
+  "obsidian-annotator"
 ]

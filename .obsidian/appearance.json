@@ -1,6 +1,7 @@
 {
-  "cssTheme": "",
+  "cssTheme": "GitHub Theme",
   "theme": "obsidian",
   "baseFontSize": 16,
-  "monospaceFontFamily": "Consolas"
+  "monospaceFontFamily": "Consolas",
+  "textFontFamily": ""
 }

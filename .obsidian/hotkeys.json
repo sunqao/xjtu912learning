@@ -70,5 +70,14 @@
       ],
       "key": "M"
     }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
   ]
 }
