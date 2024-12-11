@@ -8,5 +8,5 @@
   },
   "spellcheck": false,
   "vimMode": false,
-  "autoPairBrackets": true
+  "autoPairBrackets": false
 }
